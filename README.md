@@ -1,1 +1,1 @@
-# Fix-my-code-1
+This directory contains fix me code challenge and solution
