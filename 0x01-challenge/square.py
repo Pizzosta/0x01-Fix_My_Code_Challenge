@@ -5,22 +5,22 @@
 class Square():
     """ Square class """
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, *args, **kwargs):
         """ Iniatialization of the square class """
-        self.width = width
-        self.height = height
-
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+            
     def area(self):
         """ Area of the square """
-        return self.width * self.height
+        return (self.width * self.height)
 
     def perimeter(self):
         """ Perimeter of the square """
-        return (self.width * 2) + (self.height * 2)
+        return ((self.width * 2) + (self.height * 2))
 
     def __str__(self):
         """ String representation """
-        return "{}/{}".format(self.width, self.height)
+        return ("{}/{}".format(self.width, self.height))
 
 
 if __name__ == "__main__":
