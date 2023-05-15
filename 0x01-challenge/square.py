@@ -6,7 +6,7 @@ class Square():
     """ Square class """
 
     def __init__(self, *args, **kwargs):
-        """ Iniatialization of the square class """
+        """ Initialization of the square class """
         for key, value in kwargs.items():
             setattr(self, key, value)
             
